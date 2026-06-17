@@ -1,4 +1,9 @@
-# React + TypeScript + Vite
+# Practicing use of ".map" and useState
+
+Im learning how to use .map in react applications like this to-do list and learning more about useState
+
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
