@@ -15,14 +15,18 @@ type TodolistProps = {
 const TodoList = ({ tasks, onDeleteTasks, onToggleTasks }: TodolistProps) => {
   return (
     <div className="flex flex-col gap-3">
-      {tasks.map((task) => (
-        <TodoItem
-          key={task.id}
-          task={task}
-          onDeleteTask={onDeleteTasks}
-          onToggleTask={onToggleTasks}
-        />
-      ))}
+      {tasks.map(
+        (
+          task, //takes every item in the array and makes changes to them at once.
+        ) => (
+          <TodoItem
+            key={task.id}
+            task={task}
+            onDeleteTask={onDeleteTasks}
+            onToggleTask={onToggleTasks}
+          />
+        ),
+      )}
     </div>
   );
 };
