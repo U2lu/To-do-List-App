@@ -19,9 +19,13 @@ const TodoItem = ({ task, onDeleteTask, onToggleTask }: TodoItemProps) => {
     //the styling in the div is used to arrange items in a row or horizontal manner
     <div className="flex items-center gap-3">
       <span
-        onClick={() => onToggleTask(task.id)} //onclick, it is used to show that a task has been clicked on, so it has been completed hence do the below.
         className={`cursor-pointer ${task.completed ? "line-through" : ""}`} //used to show when a task has been completed to strike a line across it.
       >
+        <input //on click of the checkbox, it would strikethrough the task to show it has been completed.
+          type="checkbox"
+          onClick={() => onToggleTask(task.id)}
+          className="mr-2"
+        />
         {task.text}
       </span>
 

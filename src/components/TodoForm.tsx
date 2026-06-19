@@ -9,7 +9,7 @@ const TodoForm = ({ onAddTasks }: TodoFormProps) => {
   const [taskText, setTaskTest] = useState("");
 
   const handleAddTask = () => {
-    if (!taskText.trim()) return;
+    if (!taskText.trim()) return; // if there is no text inputted, it becomes an empty string
 
     onAddTasks(taskText);
     setTaskTest("");

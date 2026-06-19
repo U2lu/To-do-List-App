@@ -18,7 +18,7 @@ function App() {
       completed: false,
     };
 
-    setTasks((prev) => [...prev, newTask]);
+    setTasks((prev) => [...prev, newTask]); //allows for the addition of new tasks that would be displayed.
   };
 
   const deleteTask = (id: number) => {
